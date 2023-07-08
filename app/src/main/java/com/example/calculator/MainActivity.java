@@ -44,5 +44,14 @@ public class MainActivity extends AppCompatActivity {
         int results=n1*n2;
         edt3.setText("Product Value=" + results);
     }
-
+    public void Divide(View v)
+    {
+        EditText edt1=(EditText) findViewById(R.id.editTextNumber);
+        EditText edt2=(EditText) findViewById(R.id.editTextNumber2);
+        EditText edt3=(EditText) findViewById(R.id.editTextNumber3);
+        int n1=Integer.parseInt(edt1.getText().toString());
+        int n2=Integer.parseInt(edt2.getText().toString());
+        int results=n1/n2;
+        edt3.setText("Division value=" + results);
+    }
 }
